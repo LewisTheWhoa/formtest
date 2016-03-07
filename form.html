@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Form Test</title>
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+        <style type="text/css">
+        body {
+          font-family: sans-serif;
+        }
+        #formbox {
+          width: 500px;
+          height: 500px;
+          margin: 100px auto;
+        }
+        input {
+          width: 300px;
+          height: 30px;
+          border-radius: 5px;
+          border: 1px solid grey;
+          font-size: 1em;
+          margin-top: 10px;
+        }
+        label {
+          float: left;
+          width: 100px;
+          padding-top: 18px;
+        }
+        #submitbutton {
+
+        }
+        #vallidationForm {
+
+}
+        </style>
+    </head>
+    <body>
+
+      <div id="formbox">
+          <form id="vallidationForm">
+            <label for="Username">Username</label>
+            <input type="text" name="Username" placeholder="Username" />
+
+            <label for="email">Email</label>
+            <input type="text" name="email" placeholder="Email" />
+
+            <label for="Password">Password</label>
+            <input type="password" name="Password" placeholder="Password" />
+
+            <label for="conPass">Confirm Password</label>
+            <input type="password" name="conPass" placeholder="Password">
+
+            <input id="sumitbutton" type="submit" value="Submit" />
+          </from>
+      </div>
+        <script>
+          $("#vallidationForm").submit(function(event) {
+            alert("test");
+          });
+        </script>
+    </body>
+</html>
